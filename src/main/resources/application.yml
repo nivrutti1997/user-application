@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Nivrutti#123
+    url: jdbc:mysql://usermgmt-db.cn5lji2dv5ao.us-west-2.rds.amazonaws.com:3306/usermgmt
+    username: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: true
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nivruttiraut1997@gmail.com
+    password: Nivrutti123
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
+          
+app:
+  messages:
+    userInvlidCres: Invalid Credentials...
+    userAcctLock: Your Account Is Locked
+    loginSuccess: SUCCESS
+    uniqueEmail: UNIQUE
+    duplicateEmail: DUPLICATE
+    onRegistrationError: Please enter valid details
+    onRegistrationSuccess: Please check your email to unlock account
+    wrongTempPass: Please provide correct temporary password...
+    accountUnlockSucc: Account unlocked, please proceed with login
+    forgotPassEmailWrong: Please enter registered Email-Id
+    onForgotPassSucc: Email is sent to you please check..
+    
